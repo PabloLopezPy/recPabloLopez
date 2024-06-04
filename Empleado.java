@@ -1,14 +1,17 @@
-class Empleado {
+public class Empleado {
+    // Declaramos todos los valores en private
     private String nombre;
-    private String cargo;
+    private int edad;
     private double salario;
 
-    public Empleado(String nombre, String cargo, double salario) {
+    // Constructor
+    public Empleado(String nombre, int edad, double salario) {
         this.nombre = nombre;
-        this.cargo = cargo;
+        this.edad = edad;
         this.salario = salario;
     }
 
+    // Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -17,12 +20,12 @@ class Empleado {
         this.nombre = nombre;
     }
 
-    public String getCargo() {
-        return cargo;
+    public int getEdad() {
+        return edad;
     }
 
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     public double getSalario() {
@@ -32,13 +35,6 @@ class Empleado {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-
-    @Override
-    public String toString() {
-        return "Empleado{" +
-                "nombre='" + nombre + '\'' +
-                ", cargo='" + cargo + '\'' +
-                ", salario=" + salario +
-                '}';
-    }
 }
+
+
